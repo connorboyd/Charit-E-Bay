@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="CharitEBay:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="CharitEBay.war">
+      <element id="artifact" artifact-name="CharitEBay:war exploded" />
+    </root>
+  </artifact>
+</component>
