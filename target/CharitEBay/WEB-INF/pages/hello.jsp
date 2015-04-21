@@ -1,7 +1,7 @@
 <html>
 <body>
 	<h1>${message}</h1>
-    <form action="/" method="POST">
+    <form action="/" method="POST" name="User">
 		Email: <br>
 		<input type="text" name="email">
 		<br>
