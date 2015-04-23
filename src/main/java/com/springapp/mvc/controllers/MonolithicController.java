@@ -11,9 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class MonolithicController {
 
-	// TODO list
-	// Authentication/session variables
-	// Database access
+	// TODO Authentication/session variables
+	// TODO Database access
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
@@ -24,6 +23,7 @@ public class MonolithicController {
 	@RequestMapping(value="/", method = RequestMethod.POST)
 	public String login(@ModelAttribute("User") User user) {
 		if(user.authenticate()) {
+
 			// TODO be logged in
 		} else {
 			// TODO reject login
