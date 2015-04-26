@@ -12,6 +12,7 @@
       <column name="bidder_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="posting_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="amount" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="date_bid" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="fk_bid_bidder" columns="bidder_id" ref-table="users" ref-schema="" ref-catalog="charitebay" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="fk_bid_posting" columns="posting_id" ref-table="postings" ref-schema="" ref-catalog="charitebay" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>

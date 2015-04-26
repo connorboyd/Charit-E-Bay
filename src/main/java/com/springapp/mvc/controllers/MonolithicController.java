@@ -34,10 +34,10 @@ public class MonolithicController {
         Session mySession = factory.openSession();
         Transaction tx = mySession.beginTransaction();
 
-        Posting testPost = new Posting();
-        mySession.load(testPost, 1L);
-        User donor = testPost.getDonor();
-        System.out.println(donor.getEmail() + donor.getUserName());
+        Bid bid = new Bid();
+        mySession.load(bid, 3L);
+        User bidder = bid.getBidder();
+        System.out.println(bidder.getEmail() + bidder.getUserName());
 
         tx.commit();
         mySession.close();

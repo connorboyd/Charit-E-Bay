@@ -18,6 +18,10 @@ public class Bid {
     @Column(name = "date_bid")
     private Date dateBid; // TODO Right datatype?
 
+    @ManyToOne
+    @JoinColumn(name = "bidder_id")
+    private User bidder;
+
     public Bid() {
     }
 
@@ -39,5 +43,13 @@ public class Bid {
 
     public boolean isHighestBid() {
         return false; // TODO
+    }
+
+    public User getBidder() {
+        return bidder;
+    }
+
+    public void setBidder(User bidder) {
+        this.bidder = bidder;
     }
 }
