@@ -1,6 +1,9 @@
 package com.springapp.mvc.controllers;
 
 import com.springapp.SessionFactorySingleton;
+import com.springapp.mvc.models.Bid;
+import com.springapp.mvc.models.Charity;
+import com.springapp.mvc.models.Posting;
 import com.springapp.mvc.models.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -30,13 +33,14 @@ public class MonolithicController {
 
         Session mySession = factory.openSession();
         Transaction tx = mySession.beginTransaction();
-        User testUser = new User();
-        testUser.setEmail("doug@doug.com");
-        testUser.setPasswordHash("TEST");
-        testUser.setUserName("Dougie Fresh");
-        mySession.save(testUser);
-        tx.commit();
 
+        Posting testPost = new Posting();
+        mySession.load(testPost, 1L);
+        Charity c = testPost.getCharity();
+        System.out.println(c.getName());
+
+
+        tx.commit();
         mySession.close();
 
 		model.addAttribute("message", "Welcome to Charit-E-Bay!");

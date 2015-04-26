@@ -29,5 +29,8 @@
         <!-- <property name="hbm2ddl.auto">update</property> -->
 
         <mapping class="com.springapp.mvc.models.User" />
+        <mapping class="com.springapp.mvc.models.Charity" />
+        <mapping class="com.springapp.mvc.models.Posting" />
+        <mapping class="com.springapp.mvc.models.Bid" />
     </session-factory>
 </hibernate-configuration>
