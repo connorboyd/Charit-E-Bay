@@ -27,5 +27,7 @@
         <property name="connection.password"/>
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
+
+        <mapping class="com.springapp.mvc.models.User" />
     </session-factory>
 </hibernate-configuration>

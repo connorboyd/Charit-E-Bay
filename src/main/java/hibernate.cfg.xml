@@ -13,7 +13,7 @@
         </property>
 
         <property name="hibernate.dialect">
-            org.hibernate.dialect.MySQLDialect
+            org.hibernate.dialect.MySQLInnoDBDialect
         </property>
 
         <property name="hibernate.connection.driver_class">

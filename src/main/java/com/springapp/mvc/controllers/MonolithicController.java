@@ -4,6 +4,7 @@ import com.springapp.SessionFactorySingleton;
 import com.springapp.mvc.models.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.CookieValue;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 @Controller
 @RequestMapping("/")
@@ -26,7 +28,16 @@ public class MonolithicController {
 	public String printWelcome(ModelMap model) {
         SessionFactory factory = SessionFactorySingleton.getFactory();
 
-        Session mySession = factory.getCurrentSession();
+        Session mySession = factory.openSession();
+        Transaction tx = mySession.beginTransaction();
+        User testUser = new User();
+        testUser.setEmail("doug@doug.com");
+        testUser.setPasswordHash("TEST");
+        testUser.setUserName("Dougie Fresh");
+        mySession.save(testUser);
+        tx.commit();
+
+        mySession.close();
 
 		model.addAttribute("message", "Welcome to Charit-E-Bay!");
 		return "hello"; // This is the path of the template file
