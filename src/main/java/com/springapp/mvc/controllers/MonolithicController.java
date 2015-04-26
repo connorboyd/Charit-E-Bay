@@ -36,8 +36,8 @@ public class MonolithicController {
 
         Bid bid = new Bid();
         mySession.load(bid, 3L);
-        User bidder = bid.getBidder();
-        System.out.println(bidder.getEmail() + bidder.getUserName());
+        Posting posting = bid.getPosting();
+        System.out.println(posting.getDescription());
 
         tx.commit();
         mySession.close();

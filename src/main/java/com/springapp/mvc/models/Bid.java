@@ -22,6 +22,9 @@ public class Bid {
     @JoinColumn(name = "bidder_id")
     private User bidder;
 
+    @ManyToOne
+    private Posting posting;
+
     public Bid() {
     }
 
@@ -51,5 +54,13 @@ public class Bid {
 
     public void setBidder(User bidder) {
         this.bidder = bidder;
+    }
+
+    public Posting getPosting() {
+        return posting;
+    }
+
+    public void setPosting(Posting posting) {
+        this.posting = posting;
     }
 }
