@@ -34,10 +34,10 @@ public class MonolithicController {
         Session mySession = factory.openSession();
         Transaction tx = mySession.beginTransaction();
 
-        Charity charity = new Charity();
-        mySession.load(charity, 2L);
-        Set<Posting> postings = charity.getPostings();
-        postings.forEach((p) -> System.out.println(p.getDescription()));
+        Posting post = new Posting();
+        mySession.load(post, 1L);
+        Set<Bid> bids = post.getBids();
+        bids.forEach((b) -> System.out.println(b.getAmount()));
 
         tx.commit();
         mySession.close();

@@ -1,6 +1,7 @@
 package com.springapp.mvc.models;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity(name = "postings")
 public class Posting {
@@ -25,6 +26,18 @@ public class Posting {
     @ManyToOne
     @JoinColumn(name = "donor_id")
     private User donor;
+
+    @OneToMany
+    @JoinColumn(name = "posting_id")
+    private Set<Bid> bids;
+
+    public Set<Bid> getBids() {
+        return bids;
+    }
+
+    public void setBids(Set<Bid> bids) {
+        this.bids = bids;
+    }
 
     public User getDonor() {
         return donor;

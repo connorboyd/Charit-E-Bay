@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aeb789b-38a8-45ec-8694-294b714008c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java" />
     </list>
     <ignored path="CharitEBay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Charity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Charity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37006578">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding>
                 <element signature="e#434#435#0" expanded="true" />
@@ -77,10 +77,14 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding>
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,7 +139,7 @@
                   <point x="36.5" y="59.0" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="-3.5" y="112.5" />
+              <settings layout="Hierarchic Group" zoom="1.0" x="-3.0" y="213.0" />
               <SelectedNodes>
                 <node>95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids</node>
               </SelectedNodes>
@@ -147,11 +151,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonolithicController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MonolithicController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.40789473">
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,10 +196,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/SessionFactorySingleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Bid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java" />
       </list>
     </option>
   </component>
@@ -932,12 +936,12 @@
       <workItem from="1429815145006" duration="3883000" />
       <workItem from="1430008884764" duration="10054000" />
       <workItem from="1430021997689" duration="7046000" />
-      <workItem from="1430030360423" duration="590000" />
+      <workItem from="1430030360423" duration="944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33648000" />
+    <option name="totallyTimeSpent" value="34002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1534,6 +1538,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Bid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="uml://DATABASE/95def70d-610d-4553-b028-3fb04215babb">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1570,7 +1599,7 @@
               <point x="36.5" y="59.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-3.5" y="112.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-3.0" y="213.0" />
           <SelectedNodes>
             <node>95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids</node>
           </SelectedNodes>
@@ -1584,45 +1613,24 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Bid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="68" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.40789473">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37006578">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
           </folding>
         </state>
       </provider>
