@@ -4,9 +4,10 @@ import java.util.List;
 import java.util.ArrayList;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+
 import javax.persistence.*;
 
-@Entity(name = "user")
+@Entity(name = "users")
 public class User {
 
     @Id
@@ -26,7 +27,7 @@ public class User {
         return true;
     }
 
-    public void save() { // save to database
+    public void save() { // save to database - May remove in favor of Hibernate
     }
 
     private static String hashPassword(String password) {
@@ -40,7 +41,6 @@ public class User {
 
         myMD.update(password.getBytes());
         String output = new String(myMD.digest());
-        System.out.println("output");
         return output;
 
     }

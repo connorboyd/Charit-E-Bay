@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - charitebay@localhost" uuid="95def70d-610d-4553-b028-3fb04215babb">
+    <database-info product="MySQL" version="5.6.24" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="charitebay"/>
+    <table name="bids" schema="" catalog="charitebay" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="bidder_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="posting_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="amount" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="fk_bid_bidder" columns="bidder_id" ref-table="users" ref-schema="" ref-catalog="charitebay" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_bid_posting" columns="posting_id" ref-table="postings" ref-schema="" ref-catalog="charitebay" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="bids_bidder_index" unique="false" columns="bidder_id"/>
+      <index name="bids_posting_index" unique="false" columns="posting_id"/>
+    </table>
+    <table name="charities" schema="" catalog="charitebay" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_posting_charity" table="postings" schema="" catalog="charitebay" columns="charity_id"/>
+      <index name="unique_charity_name" unique="true" columns="name"/>
+    </table>
+    <table name="postings" schema="" catalog="charitebay" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="donor_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR" precision="140" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="VARCHAR" precision="512" scale="0" nullable="false" jdbcType="12"/>
+      <column name="image" sqlType="BLOB" precision="65535" scale="0" nullable="true" jdbcType="-4"/>
+      <column name="charity_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="fk_posting_charity" columns="charity_id" ref-table="charities" ref-schema="" ref-catalog="charitebay" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_posting_donor" columns="donor_id" ref-table="users" ref-schema="" ref-catalog="charitebay" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_bid_posting" table="bids" schema="" catalog="charitebay" columns="posting_id"/>
+      <index name="postings_charity_index" unique="false" columns="charity_id"/>
+      <index name="postings_donor_index" unique="false" columns="donor_id"/>
+    </table>
+    <table name="users" schema="" catalog="charitebay" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="email" sqlType="VARCHAR" precision="254" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password_hash" sqlType="CHAR" precision="40" scale="0" nullable="false" jdbcType="1"/>
+      <column name="user_name" sqlType="VARCHAR" precision="11" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_bid_bidder" table="bids" schema="" catalog="charitebay" columns="bidder_id"/>
+      <exported-key name="fk_posting_donor" table="postings" schema="" catalog="charitebay" columns="donor_id"/>
+      <index name="unique_email" unique="true" columns="email"/>
+      <index name="user_name" unique="true" columns="user_name"/>
+    </table>
+  </data-source>
+</component>
