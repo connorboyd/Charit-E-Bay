@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aeb789b-38a8-45ec-8694-294b714008c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Bid.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Bid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/springapp/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/java/com/springapp/hibernate.cfg.xml" />
     </list>
     <ignored path="CharitEBay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,24 +39,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - charitebay@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="charitebay" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="bids" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -84,17 +63,99 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Charity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java">
+      <file leaf-file-name="Posting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#927#928#0" expanded="true" />
+                <element signature="e#973#974#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Charity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.22203948">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="e#314#315#0" expanded="true" />
                 <element signature="e#341#342#0" expanded="true" />
                 <element signature="e#381#382#0" expanded="true" />
                 <element signature="e#413#414#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DATABASE/95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids" pinned="false" current-in-tab="false">
+        <entry file="uml://DATABASE/95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids</OriginalElement>
+              <nodes>
+                <node x="-211.5" y="189.0">95def70d-610d-4553-b028-3fb04215babb.table:charitebay.postings</node>
+                <node x="-180.0" y="16.0">95def70d-610d-4553-b028-3fb04215babb.table:charitebay.charities</node>
+                <node x="161.0" y="-22.0">95def70d-610d-4553-b028-3fb04215babb.table:charitebay.users</node>
+                <node x="94.5" y="380.0">95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.postings" target="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.charities">
+                  <point x="-46.5" y="-81.0" />
+                  <point x="0.0" y="37.0" />
+                </edge>
+                <edge source="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids" target="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.postings">
+                  <point x="-36.5" y="-59.0" />
+                  <point x="131.0" y="355.0" />
+                  <point x="99.5" y="355.0" />
+                  <point x="0.0" y="81.0" />
+                </edge>
+                <edge source="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.postings" target="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.users">
+                  <point x="46.5" y="-81.0" />
+                  <point x="146.0" y="143.0" />
+                  <point x="162.5" y="143.0" />
+                  <point x="-36.5" y="59.0" />
+                </edge>
+                <edge source="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids" target="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.users">
+                  <point x="36.5" y="-59.0" />
+                  <point x="204.0" y="355.0" />
+                  <point x="235.5" y="355.0" />
+                  <point x="36.5" y="59.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-3.5" y="198.5" />
+              <SelectedNodes>
+                <node>95def70d-610d-4553-b028-3fb04215babb.table:charitebay.users</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
             </state>
           </provider>
         </entry>
@@ -119,42 +180,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonolithicController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MonolithicController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29605263">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Posting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,8 +227,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Bid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java" />
       </list>
     </option>
   </component>
@@ -928,12 +960,12 @@
       <workItem from="1429815084851" duration="19000" />
       <workItem from="1429815145006" duration="3883000" />
       <workItem from="1430008884764" duration="10054000" />
-      <workItem from="1430021997689" duration="4895000" />
+      <workItem from="1430021997689" duration="6186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30907000" />
+    <option name="totallyTimeSpent" value="32198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -942,7 +974,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26752505" sideWeight="0.3616352" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26752505" sideWeight="0.36949685" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18884121" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -959,7 +991,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26752505" sideWeight="0.6383648" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26752505" sideWeight="0.6305031" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23373494" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -991,24 +1023,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Bid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1497,30 +1511,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-          </folding>
+    <entry file="uml://Persistence/JavaeeElement:/e0901e6a/com:springapp:hibernate.cfg.xml/CharitEBay/hibernate/Hibernate/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/e0901e6a/com:springapp:hibernate.cfg.xml/CharitEBay/hibernate/Hibernate/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="" y="">Posting#file:///Users/connorboyd/Spring2015/ObjectOriented/Project/CharitEBay/src/main/java/com/springapp/mvc/models/Posting.java</node>
+            <node x="" y="">User#file:///Users/connorboyd/Spring2015/ObjectOriented/Project/CharitEBay/src/main/java/com/springapp/mvc/models/User.java</node>
+            <node x="" y="">Bid#file:///Users/connorboyd/Spring2015/ObjectOriented/Project/CharitEBay/src/main/java/com/springapp/mvc/models/Bid.java</node>
+            <node x="" y="">Charity#file:///Users/connorboyd/Spring2015/ObjectOriented/Project/CharitEBay/src/main/java/com/springapp/mvc/models/Charity.java</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="58.5" y="190.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+            <Category>Embeddables</Category>
+            <Category>Superclasses</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids</OriginalElement>
+          <nodes>
+            <node x="-211.5" y="189.0">95def70d-610d-4553-b028-3fb04215babb.table:charitebay.postings</node>
+            <node x="-180.0" y="16.0">95def70d-610d-4553-b028-3fb04215babb.table:charitebay.charities</node>
+            <node x="161.0" y="-22.0">95def70d-610d-4553-b028-3fb04215babb.table:charitebay.users</node>
+            <node x="94.5" y="380.0">95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.postings" target="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.charities">
+              <point x="-46.5" y="-81.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids" target="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.postings">
+              <point x="-36.5" y="-59.0" />
+              <point x="131.0" y="355.0" />
+              <point x="99.5" y="355.0" />
+              <point x="0.0" y="81.0" />
+            </edge>
+            <edge source="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.postings" target="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.users">
+              <point x="46.5" y="-81.0" />
+              <point x="146.0" y="143.0" />
+              <point x="162.5" y="143.0" />
+              <point x="-36.5" y="59.0" />
+            </edge>
+            <edge source="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.bids" target="95def70d-610d-4553-b028-3fb04215babb.table:charitebay.users">
+              <point x="36.5" y="-59.0" />
+              <point x="204.0" y="355.0" />
+              <point x="235.5" y="355.0" />
+              <point x="36.5" y="59.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-3.5" y="198.5" />
+          <SelectedNodes>
+            <node>95def70d-610d-4553-b028-3fb04215babb.table:charitebay.users</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
         </state>
       </provider>
     </entry>
@@ -1539,25 +1596,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Posting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/controllers/MonolithicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29605263">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springapp/mvc/models/Charity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22203948">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
           </folding>
         </state>
       </provider>

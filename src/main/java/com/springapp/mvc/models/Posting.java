@@ -22,6 +22,18 @@ public class Posting {
     @OneToOne(fetch = FetchType.EAGER)
     private Charity charity;
 
+    @ManyToOne
+    @JoinColumn(name = "donor_id")
+    private User donor;
+
+    public User getDonor() {
+        return donor;
+    }
+
+    public void setDonor(User donor) {
+        this.donor = donor;
+    }
+
     public Bid getHighestBid() {
         return new Bid(); // TODO
     }

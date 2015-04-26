@@ -36,9 +36,8 @@ public class MonolithicController {
 
         Posting testPost = new Posting();
         mySession.load(testPost, 1L);
-        Charity c = testPost.getCharity();
-        System.out.println(c.getName());
-
+        User donor = testPost.getDonor();
+        System.out.println(donor.getEmail() + donor.getUserName());
 
         tx.commit();
         mySession.close();
