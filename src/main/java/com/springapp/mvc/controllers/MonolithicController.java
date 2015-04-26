@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
+import java.util.Set;
 
 @Controller
 @RequestMapping("/")
@@ -34,10 +34,10 @@ public class MonolithicController {
         Session mySession = factory.openSession();
         Transaction tx = mySession.beginTransaction();
 
-        Bid bid = new Bid();
-        mySession.load(bid, 3L);
-        Posting posting = bid.getPosting();
-        System.out.println(posting.getDescription());
+        Charity charity = new Charity();
+        mySession.load(charity, 2L);
+        Set<Posting> postings = charity.getPostings();
+        postings.forEach((p) -> System.out.println(p.getDescription()));
 
         tx.commit();
         mySession.close();

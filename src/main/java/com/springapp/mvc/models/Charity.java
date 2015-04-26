@@ -3,6 +3,7 @@ package com.springapp.mvc.models;
 import javax.persistence.*;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Set;
 
 @Entity(name = "charities")
 public class Charity {
@@ -14,6 +15,19 @@ public class Charity {
     @Basic
     private String name;
 
+    @OneToMany
+    @JoinColumn(name = "charity_id")
+    private Set<Posting> postings;
+
+    public Set<Posting> getPostings() {
+        return postings;
+    }
+
+    public void setPostings(Set<Posting> postings) {
+        this.postings = postings;
+    }
+
+
     public String getName() {
         return name;
     }
@@ -22,9 +36,9 @@ public class Charity {
         this.name = name;
     }
 
-    public List<Posting> getPostings() {
-        ArrayList<Posting> temp = new ArrayList<Posting>();
-        temp.add(new Posting());
-        return temp; // TODO
-    }
+    //public List<Posting> getPostings() {
+    //    ArrayList<Posting> temp = new ArrayList<Posting>();
+    //    temp.add(new Posting());
+    //    return temp; // TODO
+    //}
 }
