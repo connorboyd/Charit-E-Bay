@@ -4,21 +4,20 @@ import java.util.List;
 import java.util.ArrayList;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import javax.persistence.*;
 
+@Entity(name = "user")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    @Basic
     private String email;
+
+    @Basic
     private String password;
-
-    public User(String email, String password) {
-        this.email = email;
-        this.password = hashPassword(password);
-    }
-
-    public User(String email) {
-        this.email = email;
-        this.password = null;
-    }
 
     public User() { // default constructor needed for Spring stuff
     }
