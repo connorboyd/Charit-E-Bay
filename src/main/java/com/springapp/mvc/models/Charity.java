@@ -1,8 +1,6 @@
 package com.springapp.mvc.models;
 
 import javax.persistence.*;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Set;
 
 @Entity(name = "charities")

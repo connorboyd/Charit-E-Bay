@@ -29,40 +29,12 @@ public class MonolithicController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
-        SessionFactory factory = SessionFactorySingleton.getFactory();
-
-        Session mySession = factory.openSession();
-        Transaction tx = mySession.beginTransaction();
-
-        Posting post = new Posting();
-        mySession.load(post, 1L);
-        Set<Bid> bids = post.getBids();
-        bids.forEach((b) -> System.out.println(b.getAmount()));
-
-        tx.commit();
-        mySession.close();
-
 		model.addAttribute("message", "Welcome to Charit-E-Bay!");
 		return "hello"; // This is the path of the template file
 	}
 
 	@RequestMapping(value="/", method = RequestMethod.POST)
-	public String login(@ModelAttribute("User") User user,
-                        HttpServletResponse response,
-                        @CookieValue(value = "auth_token", required = false) String authToken) {
-        if(authToken != null) {
-            System.out.println(authToken);
-        } else {
-            System.out.println("Adding cookie");
-            response.addCookie(new Cookie("auth_token", "Hello World!"));
-        }
-
-		if(user.authenticate()) {
-
-			// TODO be logged in
-		} else {
-			// TODO reject login
-		}
+	public String login(@ModelAttribute("User") User user) {
 		return "hello";
 	}
 

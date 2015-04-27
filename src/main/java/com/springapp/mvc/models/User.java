@@ -1,5 +1,9 @@
 package com.springapp.mvc.models;
 
+import com.springapp.SessionFactorySingleton;
+import org.hibernate.*;
+
+import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 import java.security.MessageDigest;
@@ -23,19 +27,34 @@ public class User {
 
     @Basic
     @Column(name="password_hash")
-    private String passwordHash;
+    private byte[] passwordHash;
 
     public User() { // default constructor needed for Spring stuff
     }
 
-    public boolean authenticate() { // TODO database stuff
-        return true;
+    // Precondition: this.email and this.passwordHash are set
+    // Postcondition: if the email and passwordHash match what appears in the database, the id associated with the
+    //                  object is returned. If the data does not match, null is returned
+    public Long authenticate() { // TODO database stuff
+        Session session = SessionFactorySingleton.getFactory().openSession();
+        try {
+            String queryString = "FROM users WHERE email = ? AND passwordHash = ?";
+            org.hibernate.Query authQuery = session.createQuery(queryString);
+            List matches = authQuery.setString(0, this.getEmail())
+                                    .setBinary(1, this.getPasswordHash())
+                                    .list();
+            if(matches.size() != 1) { // Should return at most one result since there is a UNIQUE constraint in the db
+                return null;
+            } else { // Authentication success
+                User retrievedUser = (User)matches.get(0);
+                return retrievedUser.getId(); // return d
+            }
+        } finally {
+            session.close();
+        }
     }
 
-    public void save() { // save to database - May remove in favor of Hibernate
-    }
-
-    private static String hashPassword(String password) {
+    private static byte[] hashPassword(String password) {
         MessageDigest myMD;
         try {
             myMD = MessageDigest.getInstance("SHA-1");
@@ -45,8 +64,11 @@ public class User {
         }
 
         myMD.update(password.getBytes());
-        String output = new String(myMD.digest());
-        return output;
+        return myMD.digest();
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public List<Bid> getBids() {
@@ -69,12 +91,15 @@ public class User {
         this.email = email;
     }
 
-    public String getPasswordHash() {
+    public byte[] getPasswordHash() {
         return passwordHash;
     }
 
+    public void setPasswordHash(byte[] password) {
+        this.passwordHash = password;
+    }
     public void setPasswordHash(String password) {
-        this.passwordHash = hashPassword(password);
+        this.passwordHash = password.getBytes();
     }
 
     public String getUserName() {

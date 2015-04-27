@@ -9,7 +9,6 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import java.util.Map;
 
-// TODO What does this class do? How do I use Hibernate without this class?
 public class Main {
     private static final SessionFactory ourSessionFactory;
     private static final ServiceRegistry serviceRegistry;
