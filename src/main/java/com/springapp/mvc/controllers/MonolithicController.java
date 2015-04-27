@@ -1,31 +1,15 @@
 package com.springapp.mvc.controllers;
 
-import com.springapp.SessionFactorySingleton;
-import com.springapp.mvc.models.Bid;
-import com.springapp.mvc.models.Charity;
-import com.springapp.mvc.models.Posting;
 import com.springapp.mvc.models.User;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
-import java.util.Set;
-
 @Controller
 @RequestMapping("/")
 public class MonolithicController {
-
-
-	// TODO Authentication/session variables
-	// TODO Database access
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
@@ -37,13 +21,4 @@ public class MonolithicController {
 	public String login(@ModelAttribute("User") User user) {
 		return "hello";
 	}
-
-
-
-//	@RequestMapping("/new_account")
-//	public String newAccount(ModelMap model) {
-//		model.addAttribute("message", "Login Failed!");
-//		User temp = new User("test@example.com");
-//		return "hello";
-//	}
 }
