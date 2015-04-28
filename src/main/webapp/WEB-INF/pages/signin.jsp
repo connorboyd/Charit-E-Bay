@@ -49,7 +49,6 @@
 	          <span class="icon-bar"></span>
 	          <span class="icon-bar"></span>
 	        </button>
-	        
 	      </div>
 	      <!-- Collect the nav links, forms, and other content for toggling -->
 	      <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
@@ -58,19 +57,16 @@
 	          <li><a href="browse">Browse</a></li>
 	        </ul>
 	        <ul class="nav navbar-nav navbar-right">
-	        	<li class="active"><a href="signin">Sign In</a></li>
+	        	<li class="active"><a href="login">Sign In</a></li>
 	        </ul> 
 	      </div>
 	    </div>
     </nav>
   <div class = "row">
-	  
 	  <div class="col-md-6">
 	  	<div align="center">
 	  		<h2 style="color:#FA6900">Don't have an account?</h2>
-	  		<br>
-	  		<br>
-	  		<br>
+	  		<br> <br> <br>
 	  		<a href="register"><button class="btn btn-lg btn-primary">Register Today!</button></a>
 	  	</div>
 	  </div>
@@ -98,6 +94,5 @@
 	    </form>
 	  </div>
 	</div>
-	
 	</body>
 </html>

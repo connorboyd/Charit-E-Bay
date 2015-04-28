@@ -1,5 +1,12 @@
 package com.springapp.mvc.models;
 
+import com.springapp.SessionFactorySingleton;
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Projections;
+import org.hibernate.criterion.Restrictions;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -23,11 +30,11 @@ public class Posting {
     @OneToOne(fetch = FetchType.EAGER)
     private Charity charity;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "donor_id")
     private User donor;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "posting_id")
     private Set<Bid> bids;
 
@@ -48,7 +55,21 @@ public class Posting {
     }
 
     public Bid getHighestBid() {
-        return new Bid(); // TODO
+        Set<Bid> bids = this.getBids();
+        Bid maxBid = null;
+        int maxAmount = Integer.MIN_VALUE;
+        for(Bid b : bids) {
+            if(b.getAmount() > maxAmount) {
+                maxBid = b;
+                maxAmount = b.getAmount();
+            }
+        }
+        return maxBid;
+    }
+
+    public User getHighestBidder() {
+        Bid highestBid = getHighestBid();
+        return (highestBid != null) ? highestBid.getBidder() : null;
     }
 
     public String getTitle() {
