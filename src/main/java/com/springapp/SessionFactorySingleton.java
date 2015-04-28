@@ -17,10 +17,6 @@ public class SessionFactorySingleton {
             Configuration config = new Configuration();
             ServiceRegistry serviceRegistry;
 
-            // config.setProperty("connection.username", "root");
-            // config.setProperty("hibernate.connection.url", "jdbc:mysql://localhost/charitebay");
-            // config.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLInnoDBDialect");
-            // config.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
             File cfgFile = new File(CONFIG_FILE_PATH);
             config.configure(cfgFile);
             serviceRegistry = new ServiceRegistryBuilder()
