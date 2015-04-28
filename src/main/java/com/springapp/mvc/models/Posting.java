@@ -82,4 +82,12 @@ public class Posting {
     public void setCharity(Charity charity) {
         this.charity = charity;
     }
+
+    public Bid getCurrentBid() {
+        return null; // TODO
+    }
+
+    public Long getId() {
+        return id;
+    }
 }

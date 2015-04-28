@@ -17,20 +17,14 @@ public class SessionController {
 
     @RequestMapping(value="/register", method = RequestMethod.GET)
     public String registration_page() { // This method should return the page with the form to register for the site
-        return "registration_form";
+        return "register";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String create_account(@ModelAttribute("User") User user) {
-        // Read form values
-        // Validate presence of all fields
-        // Check that passwords match
-        // System.out.println("Email = " + user.getEmail());
-        // System.out.println("UName = " + user.getUserName());
-        // System.out.println("PWord = " + user.getPasswordHash());
 
         if(user.getEmail()==null || user.getUserName()==null || user.getPasswordHash()==null) {
-            return "registration_form"; // TODO display some kind of error message
+            return "register"; // TODO display some kind of error message
         }
 
         Session dbSession = SessionFactorySingleton.getFactory().openSession();
@@ -42,12 +36,11 @@ public class SessionController {
         } catch (Exception e){ // TODO Display some type of error message depending on what type of failure it is
             e.printStackTrace();
             tx.rollback();
-            return "registration_form";
+            return "register";
         } finally {
             dbSession.close();
         }
-
-        return "hello"; // TODO Display some kind of success message
+        return "signin"; // TODO Display some kind of success message
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
@@ -57,10 +50,25 @@ public class SessionController {
         System.out.println("Authenticating. id = " + id);
         if(id != null) { // TODO - Redirect to some other location  and display a success message
             Cookie authCookie = new Cookie("auth_token", id.toString());
+            authCookie.setMaxAge(Integer.MAX_VALUE);
             response.addCookie(authCookie);
-            return "hello";
+            return "home";
         } else {    // TODO - Redirect to login page and display an error message
-            return "registration_form";
+            return "signin";
         }
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String loginPage() {
+        return "signin";
+    }
+
+    @RequestMapping(value = "/logout")
+    public String logout(HttpServletResponse response) {
+        Cookie authCookie = new Cookie("auth_token", null);
+        authCookie.setMaxAge(0);
+        response.addCookie(authCookie);
+
+        return "signin";
     }
 }
