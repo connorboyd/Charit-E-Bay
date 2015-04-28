@@ -24,10 +24,6 @@ public class MonolithicController {
         Session dbSession = SessionFactorySingleton.getFactory().openSession();
         try {
             postings = dbSession.createCriteria(Posting.class).list();
-            System.out.println("postings.size() = " + postings.size());
-            Posting result = (Posting)postings.get(0);
-            System.out.println(result.getTitle());
-            System.out.println(result.getDescription());
         } finally {
             dbSession.close();
         }

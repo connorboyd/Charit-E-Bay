@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
   <head>
   	<title>Charit-E-Bay</title>
@@ -56,7 +57,7 @@
                             <li><a href="browse">Browse</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href=${authToken ? "'profile'>My Profile" : "'login'>Sign In"}</a></a>
+                            <li><a href=${authToken!=null ? "'profile'>My Profile" : "'login'>Sign In"}</a></a>
                         </ul>
                     </div>
                 </div>
@@ -65,31 +66,28 @@
                 <div align="center">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <h2 style="color:#FA6900">Create a new bid</h2>
+                            <h2 style="color:#FA6900">Create a new posting</h2>
                             <hr>
-                            <h4>Bid title:</h4>
-                            <input type="text" class="form-control" id="title" placeholder="Enter bid item title">
-                            <h4>Bid description:</h4>
-                            <input type="text" class="form-control" id="description" placeholder="Enter bid item description">
-                            <h4>Organization:</h4>
-                            <select class="form-control" id="charity">
-                                <option>United Way</option>
-                                <option>Salvation Army</option>
-                                <option>Task Force for Global Health</option>
-                                <option>Feeding America</option>
-                                <option>Catholic Charities USA</option>
-                                <option>Goodwill Industries International</option>
-                            </select>
-                            <h4>Picture URL:</h4>
-                            <form class="form-inline" role="form">
+                            <h4>Posting title:</h4>
+                            <form action="/post_item" method="POST" name="Posting" id="postform">
+                                <input type="text" class="form-control" placeholder="Enter posting title" name="title">
+                                <h4>Posting description:</h4>
+                                <input type="text" class="form-control" id="description" placeholder="Enter item description" name="description">
+                                <h4>Organization:</h4>
+                                <select class="form-control" id="organization" name="organization" form="postform">
+                                    <c:forEach items="${charities}" var="charity">
+                                        <option value="${charity.getId()}">${charity.getName()}</option>
+                                    </c:forEach>
+                                </select>
+                                <h4>Picture URL:</h4>
                                 <input type="text" class="form-control" name="image" placeholder="Enter URL">
+                                <input type="submit" class="btn btn-primary" value="Submit">
                             </form>
                         </div>
                     </div>
                 </div>
                 <br>
                 <div align="center">
-                    <button type="button" id="submit" class="btn btn-primary">Submit</button>
                 </div>
 		    </div>
 		    <br> <br> <br>

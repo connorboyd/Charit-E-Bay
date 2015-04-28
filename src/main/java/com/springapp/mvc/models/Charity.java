@@ -34,6 +34,10 @@ public class Charity {
         this.name = name;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     //public List<Posting> getPostings() {
     //    ArrayList<Posting> temp = new ArrayList<Posting>();
     //    temp.add(new Posting());

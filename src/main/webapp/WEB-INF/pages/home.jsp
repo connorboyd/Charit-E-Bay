@@ -115,7 +115,7 @@
                   <td><img src="${posting.getImage()}" height="100px" width="100px"></td>
                   <td>${posting.getTitle()}</td>
                   <td>${posting.getCharity().getName()}</td>
-                  <td>${posting.getCurrentBid().getAmount()}</td>
+                  <td>${posting.getHighestBid().getAmount()}</td>
                   <td><a href="details/${posting.getId()}">See More</a></td>
                 </tr>
             </c:forEach>
