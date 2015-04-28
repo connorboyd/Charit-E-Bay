@@ -44,10 +44,6 @@ public class Bid {
         this.amount = amount;
     }
 
-    public boolean isHighestBid() {
-        return false; // TODO
-    }
-
     public User getBidder() {
         return bidder;
     }

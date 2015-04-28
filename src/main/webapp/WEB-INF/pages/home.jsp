@@ -66,10 +66,12 @@
 	      <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
 	        <ul class="nav navbar-nav">
 	          <li class="active"><a href="/">Home</a></li>
-	          <li><a href="browse">Browse</a></li>
+              <li><a href="/post_item">Post Item</a></li>
 	        </ul>
 	        <ul class="nav navbar-nav navbar-right">
-                <li><a href=${authToken ? "'profile'>My Profile" : "'login'>Sign In"}</a></a>
+                <c:if test="${authToken == null}">
+                    <li><a href="login">Sign In</a></li>
+                </c:if>
 	        </ul>
 	      </div>
 	    </div>
@@ -80,7 +82,7 @@
           <div class="col-md-2"></div>
           <div class="col-md-8">
         <div class="well well-sm" id="well" style="background-color:#E0E4CC">
-    		<h2 class="welcome"><b>Welcome to Charit-E-Bay!</b></h4>
+    		<h2 class="welcome"><b>Welcome to Charit-E-Bay!</b></h2>
     		<p class="welcome"><b>Where you can sell and bid on items to raise money for charitable organizations</b></p>
         </div>
       </div>
@@ -91,9 +93,7 @@
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-      
-    	  <h2 class="welcome"><b>Recent Items:</b></h2>
-      
+    	  <h2 class="welcome"><b>Current Items:</b></h2>
     </div>
     </div>
     <div class="row">

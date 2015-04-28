@@ -29,9 +29,8 @@ public class SessionController {
 
         Session dbSession = SessionFactorySingleton.getFactory().openSession();
         Transaction tx = dbSession.beginTransaction();
-
         try {
-            System.out.println("Key = " + dbSession.save(user));
+            dbSession.save(user);
             tx.commit();
         } catch (Exception e){ // TODO Display some type of error message depending on what type of failure it is
             e.printStackTrace();
@@ -45,9 +44,7 @@ public class SessionController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(@ModelAttribute("User") User user, HttpServletResponse response) {
-        System.out.println(new String(user.getPasswordHash()));
         Long id = user.authenticate();
-        System.out.println("Authenticating. id = " + id);
         if(id != null) { // TODO - Redirect to some other location  and display a success message
             Cookie authCookie = new Cookie("auth_token", id.toString());
             authCookie.setMaxAge(Integer.MAX_VALUE);

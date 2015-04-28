@@ -54,10 +54,12 @@
                     <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="/">Home</a></li>
-                            <li><a href="browse">Browse</a></li>
+                            <li class="active"><a href="/post_item">Post Item</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href=${authToken!=null ? "'profile'>My Profile" : "'login'>Sign In"}</a></a>
+                            <c:if test="${authToken == null}">
+                                <li><a href="login">Sign In</a></li>
+                            </c:if>
                         </ul>
                     </div>
                 </div>
